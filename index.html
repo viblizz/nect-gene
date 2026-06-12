@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NxtGenEcom | Ecommerce Growth Partner</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#fff;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li{
+position:relative;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+display:none;
+position:absolute;
+top:35px;
+left:0;
+background:white;
+width:280px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.dropdown a{
+display:block;
+padding:12px 15px;
+color:#222;
+font-size:14px;
+}
+
+.dropdown a:hover{
+background:#f5f5f5;
+}
+
+nav ul li:hover .dropdown{
+display:block;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content span{
+color:#FF6B35;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+/* SECTION */
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* SERVICES */
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+text-decoration:none;
+color:white;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-card h3{
+margin-bottom:15px;
+color:#FF6B35;
+}
+
+/* CLIENTS */
+
+.marquee{
+overflow:hidden;
+white-space:nowrap;
+position:relative;
+}
+
+.marquee-content{
+display:inline-block;
+animation:scroll 20s linear infinite;
+font-size:35px;
+font-weight:700;
+}
+
+.marquee-content span{
+margin:0 60px;
+color:#FF6B35;
+}
+
+@keyframes scroll{
+0%{transform:translateX(100%);}
+100%{transform:translateX(-100%);}
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.review{
+background:#103240;
+padding:25px;
+border-radius:15px;
+}
+
+.review h4{
+color:#FF6B35;
+margin-bottom:10px;
+}
+
+/* FAQ */
+
+.faq-item{
+margin-bottom:20px;
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0b2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+background:#0F4C5C;
+border-radius:20px;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li>
+
+<a href="#">Services ▼</a>
+
+<div class="dropdown">
+
+<a href="ecommerce-management.html">Ecommerce Marketplace Management</a>
+
+<a href="advertising-management.html">Advertising Management</a>
+
+<a href="shopify-services.html">Shopify Store Services</a>
+
+<a href="business-registration.html">Business Registration</a>
+
+<a href="website-development.html">Website Development</a>
+
+<a href="digital-marketing.html">Digital Marketing</a>
+
+<a href="graphic-design.html">Graphic Design Services</a>
+
+<a href="business-tools.html">Business Tools & Integrations</a>
+
+<a href="premium-solutions.html">Premium Ecommerce Solutions</a>
+
+</div>
+
+</li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Scale Your Business With <span>NxtGenEcom</span></h1>
+
+<p>
+Amazon • Flipkart • Meesho • Shopify • Digital Marketing
+</p>
+
+<a href="#" class="btn">Get Free Consultation</a>
+
+<a href="#services" class="btn">Explore Services</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">
+Our <span>Services</span>
+</h2>
+
+<div class="services-grid">
+
+<a href="ecommerce-management.html" class="service-card">
+<h3>Ecommerce Marketplace Management</h3>
+<p>Amazon, Flipkart, Meesho, Jiomart & Myntra Management.</p>
+</a>
+
+<a href="advertising-management.html" class="service-card">
+<h3>Advertising Management</h3>
+<p>Amazon PPC & Marketplace Advertising.</p>
+</a>
+
+<a href="shopify-services.html" class="service-card">
+<h3>Shopify Store Services</h3>
+<p>Professional Shopify Store Setup & Management.</p>
+</a>
+
+<a href="website-development.html" class="service-card">
+<h3>Website Development</h3>
+<p>Business & Ecommerce Website Solutions.</p>
+</a>
+
+<a href="digital-marketing.html" class="service-card">
+<h3>Digital Marketing</h3>
+<p>Social Media & Performance Marketing.</p>
+</a>
+
+<a href="premium-solutions.html" class="service-card">
+<h3>Premium Ecommerce Solutions</h3>
+<p>Advanced Growth Services.</p>
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Our <span>Clients</span>
+</h2>
+
+<div class="marquee">
+
+<div class="marquee-content">
+
+<span>Dailus Retail</span>
+<span>CuratCart</span>
+<span>Indiglob</span>
+<span>Dropy</span>
+<span>EwaShop</span>
+<span>Brand Hub</span>
+<span>Ecom Masters</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Client <span>Reviews</span>
+</h2>
+
+<div class="testimonials">
+
+<div class="review">
+<h4>CuratCart</h4>
+<p>Excellent marketplace management and Shopify support.</p>
+</div>
+
+<div class="review">
+<h4>Dailus Retail</h4>
+<p>Professional team with amazing growth strategies.</p>
+</div>
+
+<div class="review">
+<h4>Indiglob</h4>
+<p>Helped us scale our Amazon business quickly.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">What marketplaces do you support?</div>
+<div class="faq-answer">
+Amazon, Flipkart, Meesho, Jiomart and Myntra.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do you create Shopify Stores?</div>
+<div class="faq-answer">
+Yes. Complete Shopify Store Setup & Management.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do you offer website development?</div>
+<div class="faq-answer">
+Yes. Ecommerce and Business Website Development.
+</div>
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Ready To Grow?</h2>
+
+<p>Let's build your ecommerce success together.</p>
+
+<a href="contact.html" class="btn">Contact Us</a>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+<a href="digital-marketing.html">Digital Marketing</a>
+
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 NxtGenEcom. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+})
+
+});
+
+</script>
+
+</body>
+</html>

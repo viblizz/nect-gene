@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Website Development Services | NxtGenEcom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* HERO */
+
+.hero{
+padding:180px 8% 100px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FF6B35;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* SERVICES */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#FF6B35;
+margin-bottom:15px;
+}
+
+.card ul{
+padding-left:20px;
+line-height:2;
+}
+
+/* PROCESS */
+
+.process{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.step{
+background:#103240;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.step h3{
+color:#FF6B35;
+margin-bottom:10px;
+}
+
+/* FAQ */
+
+.faq-item{
+margin-bottom:15px;
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0B2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* CTA */
+
+.cta{
+background:#0F4C5C;
+border-radius:20px;
+padding:60px;
+text-align:center;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Website <span>Development</span></h1>
+
+<p>
+Professional Website Development Services for startups, ecommerce brands, local businesses and enterprises. We create fast, responsive and conversion-focused websites that help businesses establish a strong online presence and generate more leads and sales.
+</p>
+
+<a href="index.html" class="btn">← Back To Home</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<h2 class="section-title">
+Our Website Development <span>Services</span>
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Business Website Development</h3>
+<ul>
+<li>Corporate Websites</li>
+<li>Service Business Websites</li>
+<li>Portfolio Websites</li>
+<li>Landing Pages</li>
+<li>Custom Design</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Ecommerce Website Development</h3>
+<ul>
+<li>Shopify Stores</li>
+<li>WooCommerce Stores</li>
+<li>Product Catalog Setup</li>
+<li>Payment Gateway Integration</li>
+<li>Order Management Setup</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Custom Website Design</h3>
+<ul>
+<li>UI/UX Design</li>
+<li>Responsive Layout</li>
+<li>Premium Design</li>
+<li>Brand Identity Integration</li>
+<li>Modern User Experience</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Website Optimization</h3>
+<ul>
+<li>Speed Optimization</li>
+<li>Mobile Optimization</li>
+<li>SEO Optimization</li>
+<li>Performance Enhancement</li>
+<li>Core Web Vitals Improvement</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Integrations</h3>
+<ul>
+<li>WhatsApp Integration</li>
+<li>Payment Gateway Setup</li>
+<li>CRM Integration</li>
+<li>Email Marketing Tools</li>
+<li>Analytics Setup</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Maintenance & Support</h3>
+<ul>
+<li>Website Updates</li>
+<li>Bug Fixes</li>
+<li>Security Monitoring</li>
+<li>Backup Management</li>
+<li>Technical Support</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROCESS -->
+
+<section>
+
+<h2 class="section-title">
+Our Development <span>Process</span>
+</h2>
+
+<div class="process">
+
+<div class="step">
+<h3>1. Planning</h3>
+<p>Understanding business goals and website requirements.</p>
+</div>
+
+<div class="step">
+<h3>2. Design</h3>
+<p>Creating a professional and user-friendly layout.</p>
+</div>
+
+<div class="step">
+<h3>3. Development</h3>
+<p>Building a fast and responsive website.</p>
+</div>
+
+<div class="step">
+<h3>4. Launch</h3>
+<p>Testing, optimization and going live.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+What types of websites do you develop?
+</div>
+<div class="faq-answer">
+We develop business websites, ecommerce stores, portfolio websites, landing pages and custom web solutions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Will my website be mobile friendly?
+</div>
+<div class="faq-answer">
+Yes, every website we build is fully responsive and optimized for mobile devices.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide domain and hosting support?
+</div>
+<div class="faq-answer">
+Yes, we assist with domain registration, hosting setup and website deployment.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you redesign my existing website?
+</div>
+<div class="faq-answer">
+Yes, we offer complete website redesign and modernization services.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide SEO optimization?
+</div>
+<div class="faq-answer">
+Yes, all websites are built with SEO best practices for better search visibility.
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready To Build Your Website?</h2>
+
+<p>
+Partner with NxtGenEcom and create a professional website that drives growth and results.
+</p>
+
+<a href="contact.html" class="btn">
+Get Free Consultation
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="advertising-management.html">Advertising Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+<a href="website-development.html">Website Development</a>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NxtGenEcom. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

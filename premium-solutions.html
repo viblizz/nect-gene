@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Ecommerce Solutions | NxtGenEcom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* HERO */
+
+.hero{
+padding:180px 8% 100px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FF6B35;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* SERVICES */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#FF6B35;
+margin-bottom:15px;
+}
+
+.card ul{
+padding-left:20px;
+line-height:2;
+}
+
+/* BENEFITS */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+background:#103240;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.benefit h3{
+color:#FF6B35;
+margin-bottom:10px;
+}
+
+/* FAQ */
+
+.faq-item{
+margin-bottom:15px;
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0B2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* CTA */
+
+.cta{
+background:#0F4C5C;
+border-radius:20px;
+padding:60px;
+text-align:center;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Premium Ecommerce <span>Solutions</span></h1>
+
+<p>
+Accelerate your business growth with our premium ecommerce solutions. Designed for serious brands and high-growth sellers, our advanced services help maximize sales, improve profitability and build long-term ecommerce success.
+</p>
+
+<a href="index.html" class="btn">← Back To Home</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<h2 class="section-title">
+Premium Growth <span>Services</span>
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Marketplace Growth Strategy</h3>
+<ul>
+<li>Business Growth Planning</li>
+<li>Competitor Analysis</li>
+<li>Sales Forecasting</li>
+<li>Category Expansion</li>
+<li>Brand Positioning</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Advanced Account Management</h3>
+<ul>
+<li>Dedicated Account Manager</li>
+<li>Performance Monitoring</li>
+<li>Issue Resolution</li>
+<li>Policy Compliance</li>
+<li>Account Health Management</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Brand Building</h3>
+<ul>
+<li>Brand Store Creation</li>
+<li>A+ Content Design</li>
+<li>Enhanced Brand Content</li>
+<li>Customer Trust Building</li>
+<li>Brand Visibility Growth</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Premium Advertising</h3>
+<ul>
+<li>Advanced PPC Management</li>
+<li>Sponsored Brand Campaigns</li>
+<li>DSP Advertising</li>
+<li>ROAS Optimization</li>
+<li>Advertising Automation</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Business Intelligence</h3>
+<ul>
+<li>Custom Reporting</li>
+<li>Sales Analytics</li>
+<li>Profit Analysis</li>
+<li>Performance Dashboards</li>
+<li>Growth Recommendations</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Complete Ecommerce Ecosystem</h3>
+<ul>
+<li>Marketplace Integration</li>
+<li>Shopify Integration</li>
+<li>CRM Integration</li>
+<li>Inventory Sync</li>
+<li>Automation Systems</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section>
+
+<h2 class="section-title">
+Why Choose <span>Premium Solutions?</span>
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Faster Growth</h3>
+<p>Advanced strategies designed to scale revenue and profitability.</p>
+</div>
+
+<div class="benefit">
+<h3>Dedicated Experts</h3>
+<p>Access to experienced ecommerce specialists and consultants.</p>
+</div>
+
+<div class="benefit">
+<h3>Data Driven Decisions</h3>
+<p>Make smarter business decisions using advanced analytics.</p>
+</div>
+
+<div class="benefit">
+<h3>End-To-End Management</h3>
+<p>Comprehensive support covering every aspect of ecommerce growth.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+Who are Premium Ecommerce Solutions for?
+</div>
+<div class="faq-answer">
+These solutions are designed for established brands, growing businesses and serious ecommerce sellers looking to scale quickly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide a dedicated account manager?
+</div>
+<div class="faq-answer">
+Yes, premium clients receive dedicated support and account management services.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you manage multiple marketplaces?
+</div>
+<div class="faq-answer">
+Yes, we manage Amazon, Flipkart, Meesho, Jiomart, Myntra and Shopify stores together.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide advanced advertising management?
+</div>
+<div class="faq-answer">
+Yes, premium plans include advanced PPC optimization and performance marketing strategies.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+How do I get started?
+</div>
+<div class="faq-answer">
+Simply contact our team for a free business consultation and growth assessment.
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready To Scale Your Business?</h2>
+
+<p>
+Unlock premium ecommerce growth strategies and take your brand to the next level with NxtGenEcom.
+</p>
+
+<a href="contact.html" class="btn">
+Get Free Consultation
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="advertising-management.html">Advertising Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+<a href="premium-solutions.html">Premium Solutions</a>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NxtGenEcom. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

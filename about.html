@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | NxtGenEcom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* HERO */
+
+.hero{
+padding:180px 8% 100px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FF6B35;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* ABOUT */
+
+.about-box{
+background:#103240;
+padding:40px;
+border-radius:20px;
+line-height:2;
+font-size:17px;
+}
+
+/* CONTACT INFO */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.contact-card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.contact-card h3{
+color:#FF6B35;
+margin-bottom:15px;
+}
+
+/* FAQ */
+
+.faq-item{
+margin-bottom:15px;
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0B2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>About <span>NxtGenEcom</span></h1>
+
+<p>
+Empowering Ecommerce Brands With Professional Marketplace Management, Shopify Development, Digital Marketing, Business Registration and Growth Solutions.
+</p>
+
+<a href="index.html" class="btn">← Back To Home</a>
+
+</section>
+
+<!-- ABOUT US -->
+
+<section>
+
+<h2 class="section-title">
+About <span>Us</span>
+</h2>
+
+<div class="about-box">
+
+<p>
+NxtGenEcom is a full-service Ecommerce Growth Agency dedicated to helping businesses succeed in the digital marketplace. We specialize in Marketplace Management, Amazon & Flipkart Seller Services, Shopify Store Development, Advertising Management, Business Registration, Graphic Design, Website Development and Business Automation Solutions.
+</p>
+
+<br>
+
+<p>
+Our mission is to provide businesses with professional, affordable and result-driven ecommerce solutions that help increase sales, improve brand visibility and achieve sustainable growth.
+</p>
+
+<br>
+
+<p>
+Whether you are a startup, small business or an established brand, our experienced team works closely with you to create customized strategies that deliver measurable results.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT DETAILS -->
+
+<section>
+
+<h2 class="section-title">
+Contact <span>Information</span>
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>📧 Email Address</h3>
+<p>nxtgenecom@gmail.com</p>
+</div>
+
+<div class="contact-card">
+<h3>📞 Contact Number</h3>
+<p>+91 9082343372</p>
+</div>
+
+<div class="contact-card">
+<h3>📍 Office Address</h3>
+<p>
+Chirag House,<br>
+Sector 18, Vashi,<br>
+Navi Mumbai - 400706
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+What services does NxtGenEcom provide?
+</div>
+<div class="faq-answer">
+We provide Ecommerce Marketplace Management, Shopify Development, Advertising Management, Website Development, Graphic Design, Business Registration and Business Automation Services.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you work with startups?
+</div>
+<div class="faq-answer">
+Yes, we work with startups, small businesses, growing brands and established ecommerce companies.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you help with Amazon and Flipkart selling?
+</div>
+<div class="faq-answer">
+Yes, we provide complete marketplace setup, listing optimization, advertising management and account management services.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide Shopify website development?
+</div>
+<div class="faq-answer">
+Yes, we create professional Shopify stores with premium themes, payment integration and conversion optimization.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+How can I contact NxtGenEcom?
+</div>
+<div class="faq-answer">
+You can call us at +91 9082343372 or email us at nxtgenecom@gmail.com.
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="advertising-management.html">Advertising Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+<a href="website-development.html">Website Development</a>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NxtGenEcom. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

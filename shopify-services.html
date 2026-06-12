@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopify Store Services | NxtGenEcom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* HERO */
+
+.hero{
+padding:180px 8% 100px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1556740749-887f6717d7e4');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FF6B35;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* SERVICES */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#FF6B35;
+margin-bottom:15px;
+}
+
+.card ul{
+padding-left:20px;
+line-height:2;
+}
+
+/* BENEFITS */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+background:#103240;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.benefit h3{
+color:#FF6B35;
+margin-bottom:10px;
+}
+
+/* FAQ */
+
+.faq-item{
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+margin-bottom:15px;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0b2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* CTA */
+
+.cta{
+background:#0F4C5C;
+border-radius:20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Shopify Store <span>Services</span></h1>
+
+<p>
+Launch, manage and grow your Shopify store with our complete Shopify solutions. From store setup to custom design, product uploads, payment integration and conversion optimization, we help businesses build a professional online store that drives sales.
+</p>
+
+<a href="index.html" class="btn">← Back To Home</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<h2 class="section-title">
+Shopify <span>Services</span>
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Shopify Store Setup</h3>
+<ul>
+<li>New Store Creation</li>
+<li>Domain Connection</li>
+<li>Store Configuration</li>
+<li>Navigation Setup</li>
+<li>Essential Settings</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Premium Theme Design</h3>
+<ul>
+<li>Professional Layout Design</li>
+<li>Homepage Customization</li>
+<li>Mobile Responsive Design</li>
+<li>Brand Color Integration</li>
+<li>Premium Look & Feel</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Product Uploads</h3>
+<ul>
+<li>Product Listing Creation</li>
+<li>SEO Optimized Titles</li>
+<li>Product Descriptions</li>
+<li>Variant Setup</li>
+<li>Collection Management</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Payment Integration</h3>
+<ul>
+<li>Razorpay Setup</li>
+<li>PayU Integration</li>
+<li>Cash On Delivery Setup</li>
+<li>UPI Payment Setup</li>
+<li>Secure Checkout Configuration</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Apps & Automation</h3>
+<ul>
+<li>Email Marketing Apps</li>
+<li>WhatsApp Integration</li>
+<li>Review Apps Setup</li>
+<li>Inventory Automation</li>
+<li>Order Tracking Setup</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Conversion Optimization</h3>
+<ul>
+<li>Speed Optimization</li>
+<li>Trust Badge Setup</li>
+<li>Sales Funnel Design</li>
+<li>Cart Optimization</li>
+<li>Conversion Tracking</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section>
+
+<h2 class="section-title">
+Why Choose <span>NxtGenEcom</span>
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Professional Design</h3>
+<p>Modern Shopify stores designed to build trust and increase conversions.</p>
+</div>
+
+<div class="benefit">
+<h3>Mobile Optimized</h3>
+<p>Fully responsive stores that perform perfectly on all devices.</p>
+</div>
+
+<div class="benefit">
+<h3>Fast Loading</h3>
+<p>Optimized speed for better customer experience and SEO rankings.</p>
+</div>
+
+<div class="benefit">
+<h3>Growth Focused</h3>
+<p>Built with ecommerce best practices to maximize sales and revenue.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you create Shopify stores from scratch?
+</div>
+<div class="faq-answer">
+Yes, we provide complete Shopify store setup and launch services.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you redesign my existing Shopify store?
+</div>
+<div class="faq-answer">
+Yes, we can redesign and optimize your existing Shopify store for better performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you upload products?
+</div>
+<div class="faq-answer">
+Yes, we provide bulk and manual product upload services with SEO optimization.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you integrate payment gateways?
+</div>
+<div class="faq-answer">
+Yes, we integrate Razorpay, PayU, UPI, COD and other payment solutions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide Shopify maintenance?
+</div>
+<div class="faq-answer">
+Yes, we offer ongoing store management, updates and optimization services.
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready To Launch Your Shopify Store?</h2>
+
+<p>
+Let NxtGenEcom build a high-converting Shopify store for your business.
+</p>
+
+<a href="contact.html" class="btn">
+Get Free Consultation
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="advertising-management.html">Advertising Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NxtGenEcom. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+})
+
+});
+
+</script>
+
+</body>
+</html>

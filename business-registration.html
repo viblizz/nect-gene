@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Business Registration Services | NxtGenEcom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* HERO */
+
+.hero{
+padding:180px 8% 100px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FF6B35;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#FF6B35;
+margin-bottom:15px;
+}
+
+.card ul{
+padding-left:20px;
+line-height:2;
+}
+
+/* BENEFITS */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+background:#103240;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.benefit h3{
+color:#FF6B35;
+margin-bottom:10px;
+}
+
+/* FAQ */
+
+.faq-item{
+margin-bottom:15px;
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0B2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* CTA */
+
+.cta{
+background:#0F4C5C;
+border-radius:20px;
+text-align:center;
+padding:60px;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Business <span>Registration Services</span></h1>
+
+<p>
+Start your business legally and professionally with our complete registration services. We help entrepreneurs, startups, ecommerce sellers and companies with GST Registration, MSME Registration, Trademark Registration, Company Formation and all essential business compliance requirements.
+</p>
+
+<a href="index.html" class="btn">← Back To Home</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<h2 class="section-title">
+Business Registration <span>Services</span>
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>GST Registration</h3>
+<ul>
+<li>New GST Registration</li>
+<li>GST Amendments</li>
+<li>GST Consultation</li>
+<li>GST Compliance Guidance</li>
+<li>GST Documentation Support</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>MSME Registration</h3>
+<ul>
+<li>Udyam Registration</li>
+<li>MSME Certificate Assistance</li>
+<li>Government Benefits Guidance</li>
+<li>Business Verification</li>
+<li>Renewal Support</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Trademark Registration</h3>
+<ul>
+<li>Trademark Search</li>
+<li>Trademark Filing</li>
+<li>Brand Protection</li>
+<li>Application Monitoring</li>
+<li>Registration Guidance</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Company Registration</h3>
+<ul>
+<li>Private Limited Company</li>
+<li>LLP Registration</li>
+<li>One Person Company</li>
+<li>Partnership Firm</li>
+<li>Business Structuring</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Import Export Code</h3>
+<ul>
+<li>IEC Registration</li>
+<li>DGFT Assistance</li>
+<li>Export Documentation</li>
+<li>Compliance Support</li>
+<li>Renewal Assistance</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Ecommerce Compliance</h3>
+<ul>
+<li>Amazon Compliance</li>
+<li>Flipkart Compliance</li>
+<li>Seller Documentation</li>
+<li>Brand Registration Support</li>
+<li>Business Verification</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section>
+
+<h2 class="section-title">
+Why Choose <span>NxtGenEcom</span>
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Fast Processing</h3>
+<p>Quick registration support with complete documentation assistance.</p>
+</div>
+
+<div class="benefit">
+<h3>Expert Guidance</h3>
+<p>Professional consultation for startups, businesses and ecommerce sellers.</p>
+</div>
+
+<div class="benefit">
+<h3>Affordable Pricing</h3>
+<p>Transparent pricing with no hidden charges.</p>
+</div>
+
+<div class="benefit">
+<h3>End-to-End Support</h3>
+<p>From application to approval, we assist throughout the process.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+Why is GST Registration important?
+</div>
+<div class="faq-answer">
+GST registration is required for many businesses and ecommerce sellers to legally sell products and services in India.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you help with Trademark Registration?
+</div>
+<div class="faq-answer">
+Yes, we provide complete trademark filing and registration assistance for brand protection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Which company structures can you register?
+</div>
+<div class="faq-answer">
+We assist with Private Limited Company, LLP, OPC and Partnership Firm registrations.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do ecommerce sellers need business registration?
+</div>
+<div class="faq-answer">
+Most marketplaces require proper business documentation such as GST, PAN and bank verification.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide Import Export Code registration?
+</div>
+<div class="faq-answer">
+Yes, we help businesses obtain IEC registration for import and export activities.
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready To Register Your Business?</h2>
+
+<p>
+Let NxtGenEcom help you start your business legally and professionally.
+</p>
+
+<a href="contact.html" class="btn">
+Get Free Consultation
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="advertising-management.html">Advertising Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+<a href="business-registration.html">Business Registration</a>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NxtGenEcom. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

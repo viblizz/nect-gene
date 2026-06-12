@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advertising Management | NxtGenEcom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081C24;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0F4C5C;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#FF6B35;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FF6B35;
+}
+
+/* HERO */
+
+.hero{
+padding:180px 8% 100px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1460925895917-afdab827c52f');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FF6B35;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF6B35;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.section-title span{
+color:#FF6B35;
+}
+
+/* SERVICES */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:#103240;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#FF6B35;
+margin-bottom:15px;
+}
+
+.card ul{
+padding-left:20px;
+line-height:2;
+}
+
+/* BENEFITS */
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.benefit{
+background:#103240;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+/* FAQ */
+
+.faq-item{
+background:#103240;
+border-radius:10px;
+overflow:hidden;
+margin-bottom:15px;
+}
+
+.faq-question{
+padding:20px;
+cursor:pointer;
+font-weight:600;
+}
+
+.faq-answer{
+display:none;
+padding:20px;
+background:#0b2631;
+}
+
+.faq-item.active .faq-answer{
+display:block;
+}
+
+/* CTA */
+
+.cta{
+background:#0F4C5C;
+border-radius:20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:25px;
+}
+
+/* FOOTER */
+
+footer{
+background:#05131A;
+padding:60px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-links a:hover{
+color:#FF6B35;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+NxtGen<span>Ecom</span>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Advertising <span>Management</span></h1>
+
+<p>
+Boost your visibility, traffic, and sales with professional advertising management services. We create and optimize high-performing ad campaigns across Amazon, Flipkart, Google, Meta, and other platforms to maximize your ROI and brand growth.
+</p>
+
+<a href="index.html" class="btn">← Back To Home</a>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<h2 class="section-title">
+Advertising <span>Services</span>
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Amazon PPC Management</h3>
+<ul>
+<li>Sponsored Products Campaigns</li>
+<li>Sponsored Brands Campaigns</li>
+<li>Sponsored Display Ads</li>
+<li>Keyword Research</li>
+<li>Bid Optimization</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Flipkart Advertising</h3>
+<ul>
+<li>Product Ads Setup</li>
+<li>Campaign Monitoring</li>
+<li>Budget Optimization</li>
+<li>Keyword Management</li>
+<li>Performance Reporting</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Google Ads</h3>
+<ul>
+<li>Search Campaigns</li>
+<li>Shopping Ads</li>
+<li>Display Advertising</li>
+<li>Remarketing Campaigns</li>
+<li>Lead Generation Ads</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Meta Ads</h3>
+<ul>
+<li>Facebook Ads</li>
+<li>Instagram Ads</li>
+<li>Audience Targeting</li>
+<li>Retargeting Campaigns</li>
+<li>Conversion Optimization</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Campaign Optimization</h3>
+<ul>
+<li>A/B Testing</li>
+<li>CTR Improvement</li>
+<li>Conversion Optimization</li>
+<li>ROAS Improvement</li>
+<li>Budget Scaling</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Analytics & Reporting</h3>
+<ul>
+<li>Weekly Reports</li>
+<li>Monthly Reports</li>
+<li>Campaign Insights</li>
+<li>Sales Analysis</li>
+<li>Growth Recommendations</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section>
+
+<h2 class="section-title">
+Why Choose Our <span>Advertising Management</span>
+</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Higher Sales</h3>
+<p>Increase product visibility and boost conversions.</p>
+</div>
+
+<div class="benefit">
+<h3>Better ROI</h3>
+<p>Maximize return on every advertising rupee spent.</p>
+</div>
+
+<div class="benefit">
+<h3>Expert Campaigns</h3>
+<p>Managed by experienced ecommerce advertising specialists.</p>
+</div>
+
+<div class="benefit">
+<h3>Scalable Growth</h3>
+<p>Strategies designed for long-term business expansion.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+Frequently Asked <span>Questions</span>
+</h2>
+
+<div class="faq-item">
+<div class="faq-question">
+Which advertising platforms do you manage?
+</div>
+<div class="faq-answer">
+We manage Amazon PPC, Flipkart Ads, Google Ads, Facebook Ads and Instagram Ads.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide keyword research?
+</div>
+<div class="faq-answer">
+Yes, we conduct advanced keyword research and competitor analysis for better campaign performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can you optimize existing campaigns?
+</div>
+<div class="faq-answer">
+Absolutely. We audit and optimize existing campaigns to improve sales and reduce ad spend wastage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you provide advertising reports?
+</div>
+<div class="faq-answer">
+Yes, detailed weekly and monthly reports are provided with actionable insights.
+</div>
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready To Scale Your Advertising Results?</h2>
+
+<p>
+Let NxtGenEcom manage your advertising campaigns and drive profitable growth.
+</p>
+
+<a href="contact.html" class="btn">
+Get Free Consultation
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>NxtGenEcom</h3>
+<p>Your Complete Ecommerce Growth Partner.</p>
+</div>
+
+<div class="footer-links">
+<h3>Services</h3>
+<a href="ecommerce-management.html">Marketplace Management</a>
+<a href="advertising-management.html">Advertising Management</a>
+<a href="shopify-services.html">Shopify Services</a>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 NxtGenEcom. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+item.parentElement.classList.toggle("active");
+
+})
+
+});
+
+</script>
+
+</body>
+</html>

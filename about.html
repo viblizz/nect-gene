@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>NxtGenEcom | Ecommerce Growth Partner</title>
+    
+    <!-- FAVICON ICON LINK -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <!-- Your existing Google fonts and stylesheets stay here... -->
+</head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Us | NxtGenEcom</title>
+<title>NxtGenEcom | Ecommerce Growth Partner</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -42,6 +53,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.3);
 .logo{
 font-size:28px;
 font-weight:700;
+color:#fff;
 }
 
 .logo span{
@@ -54,42 +66,78 @@ list-style:none;
 gap:25px;
 }
 
+nav ul li{
+position:relative;
+}
+
 nav ul li a{
 text-decoration:none;
 color:white;
 font-weight:500;
+transition:.3s;
 }
 
 nav ul li a:hover{
 color:#FF6B35;
 }
 
+/* DROPDOWN */
+
+.dropdown{
+display:none;
+position:absolute;
+top:35px;
+left:0;
+background:white;
+width:280px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.dropdown a{
+display:block;
+padding:12px 15px;
+color:#222;
+font-size:14px;
+}
+
+.dropdown a:hover{
+background:#f5f5f5;
+}
+
+nav ul li:hover .dropdown{
+display:block;
+}
+
 /* HERO */
 
 .hero{
-padding:180px 8% 100px;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+padding:0 10%;
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d');
 background-size:cover;
 background-position:center;
 }
 
-.hero h1{
+.hero-content h1{
 font-size:60px;
 margin-bottom:20px;
 }
 
-.hero span{
+.hero-content span{
 color:#FF6B35;
 }
 
-.hero p{
-max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
 color:#ddd;
 }
 
@@ -101,18 +149,23 @@ color:white;
 text-decoration:none;
 border-radius:40px;
 font-weight:600;
-margin-top:25px;
+margin:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
 }
 
 /* SECTION */
 
 section{
-padding:90px 8%;
+padding:100px 8%;
 }
 
 .section-title{
 text-align:center;
-font-size:42px;
+font-size:40px;
 margin-bottom:50px;
 }
 
@@ -120,41 +173,80 @@ margin-bottom:50px;
 color:#FF6B35;
 }
 
-/* ABOUT */
+/* SERVICES */
 
-.about-box{
-background:#103240;
-padding:40px;
-border-radius:20px;
-line-height:2;
-font-size:17px;
-}
-
-/* CONTACT INFO */
-
-.contact-grid{
+.services-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
-margin-top:40px;
 }
 
-.contact-card{
+.service-card{
 background:#103240;
 padding:30px;
 border-radius:20px;
-text-align:center;
+transition:.3s;
+text-decoration:none;
+color:white;
 }
 
-.contact-card h3{
-color:#FF6B35;
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-card h3{
 margin-bottom:15px;
+color:#FF6B35;
+}
+
+/* CLIENTS */
+
+.marquee{
+overflow:hidden;
+white-space:nowrap;
+position:relative;
+}
+
+.marquee-content{
+display:inline-block;
+animation:scroll 20s linear infinite;
+font-size:35px;
+font-weight:700;
+}
+
+.marquee-content span{
+margin:0 60px;
+color:#FF6B35;
+}
+
+@keyframes scroll{
+0%{transform:translateX(100%);}
+100%{transform:translateX(-100%);}
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.review{
+background:#103240;
+padding:25px;
+border-radius:15px;
+}
+
+.review h4{
+color:#FF6B35;
+margin-bottom:10px;
 }
 
 /* FAQ */
 
 .faq-item{
-margin-bottom:15px;
+margin-bottom:20px;
 background:#103240;
 border-radius:10px;
 overflow:hidden;
@@ -169,11 +261,28 @@ font-weight:600;
 .faq-answer{
 display:none;
 padding:20px;
-background:#0B2631;
+background:#0b2631;
 }
 
 .faq-item.active .faq-answer{
 display:block;
+}
+
+/* CTA */
+
+.cta{
+text-align:center;
+background:#0F4C5C;
+border-radius:20px;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
 }
 
 /* FOOTER */
@@ -206,9 +315,11 @@ margin-top:40px;
 color:#888;
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
-.hero h1{
+.hero-content h1{
 font-size:40px;
 }
 
@@ -232,92 +343,156 @@ NxtGen<span>Ecom</span>
 
 <nav>
 <ul>
+
 <li><a href="index.html">Home</a></li>
+
 <li><a href="about.html">About</a></li>
+
+<li>
+
+<a href="#">Services ▼</a>
+
+<div class="dropdown">
+
+<a href="ecommerce-management.html">Ecommerce Marketplace Management</a>
+
+<a href="advertising-management.html">Advertising Management</a>
+
+<a href="shopify-services.html">Shopify Store Services</a>
+
+<a href="business-registration.html">Business Registration</a>
+
+<a href="website-development.html">Website Development</a>
+
+<a href="digital-marketing.html">Digital Marketing</a>
+
+<a href="graphic-design.html">Graphic Design Services</a>
+
+<a href="business-tools.html">Business Tools & Integrations</a>
+
+<a href="premium-solutions.html">Premium Ecommerce Solutions</a>
+
+</div>
+
+</li>
+
 <li><a href="contact.html">Contact</a></li>
+
 </ul>
 </nav>
 
 </header>
 
-<!-- HERO -->
-
 <section class="hero">
 
-<h1>About <span>NxtGenEcom</span></h1>
+<div class="hero-content">
+
+<h1>Scale Your Business With <span>NxtGenEcom</span></h1>
 
 <p>
-Empowering Ecommerce Brands With Professional Marketplace Management, Shopify Development, Digital Marketing, Business Registration and Growth Solutions.
+Amazon • Flipkart • Meesho • Shopify • Digital Marketing
 </p>
 
-<a href="index.html" class="btn">← Back To Home</a>
+<a href="#" class="btn">Get Free Consultation</a>
+
+<a href="#services" class="btn">Explore Services</a>
+
+</div>
 
 </section>
 
-<!-- ABOUT US -->
+<section id="services">
+
+<h2 class="section-title">
+Our <span>Services</span>
+</h2>
+
+<div class="services-grid">
+
+<a href="ecommerce-management.html" class="service-card">
+<h3>Ecommerce Marketplace Management</h3>
+<p>Amazon, Flipkart, Meesho, Jiomart & Myntra Management.</p>
+</a>
+
+<a href="advertising-management.html" class="service-card">
+<h3>Advertising Management</h3>
+<p>Amazon PPC & Marketplace Advertising.</p>
+</a>
+
+<a href="shopify-services.html" class="service-card">
+<h3>Shopify Store Services</h3>
+<p>Professional Shopify Store Setup & Management.</p>
+</a>
+
+<a href="website-development.html" class="service-card">
+<h3>Website Development</h3>
+<p>Business & Ecommerce Website Solutions.</p>
+</a>
+
+<a href="digital-marketing.html" class="service-card">
+<h3>Digital Marketing</h3>
+<p>Social Media & Performance Marketing.</p>
+</a>
+
+<a href="premium-solutions.html" class="service-card">
+<h3>Premium Ecommerce Solutions</h3>
+<p>Advanced Growth Services.</p>
+</a>
+
+</div>
+
+</section>
 
 <section>
 
 <h2 class="section-title">
-About <span>Us</span>
+Our <span>Clients</span>
 </h2>
 
-<div class="about-box">
+<div class="marquee">
 
-<p>
-NxtGenEcom is a full-service Ecommerce Growth Agency dedicated to helping businesses succeed in the digital marketplace. We specialize in Marketplace Management, Amazon & Flipkart Seller Services, Shopify Store Development, Advertising Management, Business Registration, Graphic Design, Website Development and Business Automation Solutions.
-</p>
+<div class="marquee-content">
 
-<br>
+<span>Dailus Retail</span>
+<span>CuratCart</span>
+<span>Indiglob</span>
+<span>Dropy</span>
+<span>EwaShop</span>
+<span>Brand Hub</span>
+<span>Ecom Masters</span>
 
-<p>
-Our mission is to provide businesses with professional, affordable and result-driven ecommerce solutions that help increase sales, improve brand visibility and achieve sustainable growth.
-</p>
-
-<br>
-
-<p>
-Whether you are a startup, small business or an established brand, our experienced team works closely with you to create customized strategies that deliver measurable results.
-</p>
+</div>
 
 </div>
 
 </section>
-
-<!-- CONTACT DETAILS -->
 
 <section>
 
 <h2 class="section-title">
-Contact <span>Information</span>
+Client <span>Reviews</span>
 </h2>
 
-<div class="contact-grid">
+<div class="testimonials">
 
-<div class="contact-card">
-<h3>📧 Email Address</h3>
-<p>nxtgenecom@gmail.com</p>
+<div class="review">
+<h4>CuratCart</h4>
+<p>Excellent marketplace management and Shopify support.</p>
 </div>
 
-<div class="contact-card">
-<h3>📞 Contact Number</h3>
-<p>+91 9082343372</p>
+<div class="review">
+<h4>Dailus Retail</h4>
+<p>Professional team with amazing growth strategies.</p>
 </div>
 
-<div class="contact-card">
-<h3>📍 Office Address</h3>
-<p>
-Chirag House,<br>
-Sector 18, Vashi,<br>
-Navi Mumbai - 400706
-</p>
+<div class="review">
+<h4>Indiglob</h4>
+<p>Helped us scale our Amazon business quickly.</p>
 </div>
 
 </div>
 
 </section>
-
-<!-- FAQ -->
 
 <section>
 
@@ -326,53 +501,37 @@ Frequently Asked <span>Questions</span>
 </h2>
 
 <div class="faq-item">
-<div class="faq-question">
-What services does NxtGenEcom provide?
-</div>
+<div class="faq-question">What marketplaces do you support?</div>
 <div class="faq-answer">
-We provide Ecommerce Marketplace Management, Shopify Development, Advertising Management, Website Development, Graphic Design, Business Registration and Business Automation Services.
+Amazon, Flipkart, Meesho, Jiomart and Myntra.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">
-Do you work with startups?
-</div>
+<div class="faq-question">Do you create Shopify Stores?</div>
 <div class="faq-answer">
-Yes, we work with startups, small businesses, growing brands and established ecommerce companies.
+Yes. Complete Shopify Store Setup & Management.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">
-Can you help with Amazon and Flipkart selling?
-</div>
+<div class="faq-question">Do you offer website development?</div>
 <div class="faq-answer">
-Yes, we provide complete marketplace setup, listing optimization, advertising management and account management services.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-Do you provide Shopify website development?
-</div>
-<div class="faq-answer">
-Yes, we create professional Shopify stores with premium themes, payment integration and conversion optimization.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-How can I contact NxtGenEcom?
-</div>
-<div class="faq-answer">
-You can call us at +91 9082343372 or email us at nxtgenecom@gmail.com.
+Yes. Ecommerce and Business Website Development.
 </div>
 </div>
 
 </section>
 
-<!-- FOOTER -->
+<section class="cta">
+
+<h2>Ready To Grow?</h2>
+
+<p>Let's build your ecommerce success together.</p>
+
+<a href="contact.html" class="btn">Contact Us</a>
+
+</section>
 
 <footer>
 
@@ -385,23 +544,28 @@ You can call us at +91 9082343372 or email us at nxtgenecom@gmail.com.
 
 <div class="footer-links">
 <h3>Services</h3>
+
 <a href="ecommerce-management.html">Marketplace Management</a>
-<a href="advertising-management.html">Advertising Management</a>
 <a href="shopify-services.html">Shopify Services</a>
-<a href="website-development.html">Website Development</a>
+<a href="digital-marketing.html">Digital Marketing</a>
+
 </div>
 
 <div class="footer-links">
 <h3>Quick Links</h3>
-<a href="index.html">Home</a>
+
 <a href="about.html">About Us</a>
-<a href="contact.html">Contact Us</a>
+<a href="contact.html">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+
 </div>
 
 </div>
 
 <div class="copyright">
+
 © 2026 NxtGenEcom. All Rights Reserved.
+
 </div>
 
 </footer>
@@ -414,7 +578,7 @@ item.addEventListener("click",()=>{
 
 item.parentElement.classList.toggle("active");
 
-});
+})
 
 });
 
